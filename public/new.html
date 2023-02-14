@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output-style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=DM+Mono:wght@300;400;500&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <title>Kulturni Institut</title>
+  </head>
+  <body class="w-screen h-screen overflow-x-hidden">
+    <header id="header" class="fixed z-10 flex items-center justify-center w-full transition-none">
+      <!-- MAIN NAV -->
+      <div class="flex-col justify-center hidden md:flex">
+        <div id="contact" class="transition-all duration-700 ease-in-out flex items-center justify-center h-[40px] mt-[10px] mb-3 bg-white shadow-[0_0_5px_rgba(0,0,0,0.12)]">
+          <ul class="flex items-center justify-between w-full h-full text-white">
+            <li class="relative flex items-center justify-center w-1/3 h-full text-gray-500 cursor-pointer nav-hover">
+              <i class="pr-3 fa-solid fa-envelope fa-md"></i>
+              <a class="text-sm font-medium">info@kulturniinstitut.rs</a>
+            </li>
+            <li class="flex justify-center w-1/3 h-full px-5 text-gray-500">
+              <ul class="flex h-full">
+                <li class="relative flex items-center justify-center h-full px-3 cursor-pointer nav-hover">
+                  <i class="fa-lg fa-brands fa-instagram"></i>
+                </li>
+                <li class="relative flex items-center justify-center h-full px-3 cursor-pointer nav-hover">
+                  <i class="fa-lg fa-brands fa-facebook"></i>
+                </li>
+                <li class="relative flex items-center justify-center h-full px-3 cursor-pointer nav-hover">
+                  <i class="fa-lg fa-brands fa-twitter"></i>
+                </li>
+              </ul>
+            </li>
+            <li class="relative flex items-center justify-end w-1/3 h-full text-gray-500 cursor-pointer">
+              <div class="relative flex items-center justify-center h-full text-gray-500 cursor-pointer nav-hover">
+                <a class="text-sm font-medium">+381 64 443 4344</a>
+                <i class="px-3 fa-solid fa-phone fa-md"></i>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div id="nav-main" class="flex items-center justify-center transition-all duration-700 ease-in-out drop-shadow-[0_0_5px_rgba(0,0,0,0.12)]">
+          <div class="w-[80px]">
+            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1920">
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: #fff;
+                  }
+                </style>
+              </defs>
+              <path class="cls-1" d="M422.45059,0Q946.087,0,1469.72332,0a80.86933,80.86933,0,0,1-3.69781,7.83494q-204.10983,337.15374-408.293,674.26322Q742.82666,1202.09885,427.92614,1722.103c-1.365,2.25405-2.75175,4.49482-4.12835,6.74176q-.57633-.15447-1.15266-.3091v-7.294q0-857.15209-.008-1714.30426C422.63707,4.62493,422.51544,2.31247,422.45059,0Z" transform="translate(0 0)" />
+              <path class="cls-1" d="M302.29249,0c.06407,2.73722.18425,5.47444.18429,8.21167q.01223,951.78846,0,1903.57687c0,2.73715-.12022,5.47431-.18429,8.21146H0V0Z" transform="translate(0 0)" />
+              <path class="cls-1" d="M1620.23715,1920c-.10931-2.73237-.31466-5.46489-.31466-8.19726q-.0213-951.80266-.00015-1903.60541c0-2.73244.20535-5.46488.31481-8.19733H1920V1920Z" transform="translate(0 0)" />
+              <path class="cls-1" d="M449.01186,1920q37.51187-62.16635,75.033-124.32729Q625.2365,1628.495,726.507,1461.36487c1.07754-1.77881,2.25868-3.49478,3.63992-5.62284,1.814.93689,3.47687,1.67506,5.02053,2.60993q377.7846,228.78591,755.54016,457.62013c1.955,1.18422,3.72206,2.67848,5.577,4.02791Z" transform="translate(0 0)" />
+              <path class="cls-1" d="M1499.50824,184.89958V1780.59072q-353.96773-214.36095-707.02962-428.173Q1145.80739,768.96592,1499.50824,184.89958Z" transform="translate(0 0)" />
+            </svg>
+          </div>
+          <nav class="flex items-center justify-center h-[80px] bg-white ml-[-1px]">
+            <ul class="flex items-center justify-center h-full font-medium text-gray-500">
+              <li class="relative flex items-center justify-center h-full nav-hover nav-item is-active">
+                <a class="flex items-center h-full px-5" href="#" draggable="false">Početna</a>
+              </li>
+              <li class="relative flex items-center justify-center h-full nav-hover nav-item">
+                <a class="flex items-center h-full px-5" href="#" draggable="false">Prijave</a>
+              </li>
+              <li class="relative flex items-center justify-center h-full nav-hover nav-item">
+                <a class="flex items-center h-full px-5" href="#" draggable="false">O institutu</a>
+              </li>
+              <li class="relative flex items-center justify-center h-full nav-hover nav-item">
+                <a class="flex items-center h-full px-5" href="#" draggable="false">Kursevi</a>
+              </li>
+              <li class="relative flex items-center justify-center h-full nav-hover nav-item">
+                <a class="flex items-center h-full px-5" href="#" draggable="false">Blog</a>
+              </li>
+              <li class="relative flex items-center justify-center h-full nav-hover nav-item">
+                <a class="flex items-center h-full px-5" href="#" draggable="false">Kontakt</a>
+              </li>
+              <div class="pointer-events-none nav-indicator button"></div>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- MOBILE NAV BAR -->
+      <div class="z-10 flex flex-row justify-center w-full m-5 md:hidden drop-shadow-md">
+        <div class="flex items-center justify-center">
+          <div class="w-[80px]">
+            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1920">
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: #fff;
+                  }
+                </style>
+              </defs>
+              <path class="cls-1" d="M422.45059,0Q946.087,0,1469.72332,0a80.86933,80.86933,0,0,1-3.69781,7.83494q-204.10983,337.15374-408.293,674.26322Q742.82666,1202.09885,427.92614,1722.103c-1.365,2.25405-2.75175,4.49482-4.12835,6.74176q-.57633-.15447-1.15266-.3091v-7.294q0-857.15209-.008-1714.30426C422.63707,4.62493,422.51544,2.31247,422.45059,0Z" transform="translate(0 0)" />
+              <path class="cls-1" d="M302.29249,0c.06407,2.73722.18425,5.47444.18429,8.21167q.01223,951.78846,0,1903.57687c0,2.73715-.12022,5.47431-.18429,8.21146H0V0Z" transform="translate(0 0)" />
+              <path class="cls-1" d="M1620.23715,1920c-.10931-2.73237-.31466-5.46489-.31466-8.19726q-.0213-951.80266-.00015-1903.60541c0-2.73244.20535-5.46488.31481-8.19733H1920V1920Z" transform="translate(0 0)" />
+              <path class="cls-1" d="M449.01186,1920q37.51187-62.16635,75.033-124.32729Q625.2365,1628.495,726.507,1461.36487c1.07754-1.77881,2.25868-3.49478,3.63992-5.62284,1.814.93689,3.47687,1.67506,5.02053,2.60993q377.7846,228.78591,755.54016,457.62013c1.955,1.18422,3.72206,2.67848,5.577,4.02791Z" transform="translate(0 0)" />
+              <path class="cls-1" d="M1499.50824,184.89958V1780.59072q-353.96773-214.36095-707.02962-428.173Q1145.80739,768.96592,1499.50824,184.89958Z" transform="translate(0 0)" />
+            </svg>
+          </div>
+        </div>
+        <div class="flex items-center justify-end h-[80px] text-black bg-white ml-[-1px] w-full">
+          <div id="burger" class="flex flex-col items-center justify-center h-full p-4 mr-4 cursor-pointer">
+            <div class="h-[40px] w-[40px] flex justify-center items-center border-[1px] border-gray-100">
+              <span id="menu" class="leading-[8px] absolute text-2xl text-gray-500 font-medium transition-all duration-100 ease-in-out opacity-100">MENU</span>
+              <span id="back" class="leading-[8px] absolute text-2xl text-gray-500 font-medium translate-y-[-10px] opacity-0 transition-all duration-100 ease-in-out">PAGE</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- MOBILE NAV PAGE -->
+      <div id="slide-menu" class="w-full h-screen bg-gray-100 -translate-x-[100%] absolute top-0 left-0 flex justify-center items-center md:hidden transition-all duration-700 ease-in-out">
+        <div class="flex items-center justify-center w-full h-full">
+          <nav class="flex flex-col items-start justify-between w-full h-[80%] mt-[120px] m-5 bg-white drop-shadow-md p-10">
+            <ul class="flex flex-col items-start justify-between w-full h-full text-2xl font-medium text-gray-500">
+              <li class="relative flex items-center justify-start nav-hover-mobile is-active-mobile">
+                <a class="flex items-center h-full" href="#" draggable="false">Početna</a>
+              </li>
+              <li class="relative flex items-center justify-start nav-hover-mobile">
+                <a class="flex items-center h-full" href="#" draggable="false">Prijave</a>
+              </li>
+              <li class="relative flex items-center justify-start nav-hover-mobile">
+                <a class="flex items-center h-full" href="#" draggable="false">O institutu</a>
+              </li>
+              <li class="relative flex items-center justify-start nav-hover-mobile">
+                <a class="flex items-center h-full" href="#" draggable="false">Kursevi</a>
+              </li>
+              <li class="relative flex items-center justify-start nav-hover-mobile">
+                <a class="flex items-center h-full" href="#" draggable="false">Blog</a>
+              </li>
+              <li class="relative flex items-center justify-start nav-hover-mobile">
+                <a class="flex items-center h-full" href="#" draggable="false">Kontakt</a>
+              </li>
+            </ul>
+            <div class="w-[90px] h-[1px] bg-gray-200 my-10"></div>
+            <ul class="flex items-center justify-between w-full h-[300px] text-white">
+              <li class="flex justify-center h-full text-gray-500">
+                <ul class="flex flex-col h-full">
+                  <li class="relative flex items-center justify-center h-full cursor-pointer">
+                    <i class="fa-2xl fa-brands fa-instagram"></i>
+                  </li>
+                  <li class="relative flex items-center justify-center h-full cursor-pointer">
+                    <i class="fa-2xl fa-brands fa-facebook"></i>
+                  </li>
+                  <li class="relative flex items-center justify-center h-full cursor-pointer">
+                    <i class="fa-2xl fa-brands fa-twitter"></i>
+                  </li>
+                </ul>
+              </li>
+              <li class="flex flex-col items-end justify-end h-full">
+                <div class="relative flex items-center justify-center pt-6 text-gray-500 cursor-pointer nav-hover">
+                  <i class="pr-3 fa-solid fa-envelope fa-md"></i>
+                  <a class="text-xl font-medium">info@kulturniinstitut.rs</a>
+                </div>
+                <div class="relative flex items-center justify-center pt-6 text-gray-500 cursor-pointer">
+                  <div class="relative flex items-center justify-center h-full text-gray-500 cursor-pointer nav-hover">
+                    <i class="px-3 fa-solid fa-phone fa-md"></i>
+                    <a class="text-xl font-medium">+381 64 443 4344</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="relative flex items-center justify-center w-full h-full overflow-x-hidden">
+      <main id="main" class="absolute top-0 left-0 flex flex-col items-center justify-center w-screen transition-all duration-700 ease-in-out md:translate-x-0">
+        <!-- <div class="w-full relative h-[100vh] flex justify-center items-center bg-[url('assets/background.png')] bg-bottom">
+          <div class="w-full h-full flex justify-center items-center overflow-x-hidden bg-[rgba(255,255,255,0.3)]">
+            <div class="flex items-center justify-center w-2/3 h-full wrapper">
+              <div class="container flex flex-col items-center justify-between text-black h-[400px]">
+                <span class="font-serif text-4xl font-medium text-center animation hide-y">Stvori svoju</span>
+                <span class="font-serif text-4xl font-medium text-center animation hide-y delay-[1000ms]"><span class="font-serif text-4xl font-medium text-center title">umetničku</span> priču uz</span>
+                <h1 class="font-sans font-extrabold text-center text-9xl title animation hide-y delay-[2000ms]">KULTURNI<br />INSTITUT</h1>
+              </div>
+              <div class="absolute bottom-[2%]">
+                <span id="scroll" class="font-sans text-xs tracking-widest font-semibold text-center animation hide-y delay-[2500ms]">DALJE</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full">
+          <img class="w-full opacity-20" src="assets/img/lines.png" alt="" />
+        </div>
+        <div class="w-full h-[100vh] flex justify-center items-center bg-white">
+          <div class="flex items-center justify-center w-9/12 h-[100vh] wrapper">
+            <div class="container flex items-center justify-between h-[70%] text-black">
+              <div class="flex flex-col items-start justify-between w-1/2 h-full py-14">
+                <h1 class="font-sans font-extrabold text-6xl title animation hide-x-left delay-[200ms]">DRAMSKE UMETNOSTI</h1>
+                <p class="font-sans py-10 text-sm pr-14 font-medium animation hide-x-left delay-[500ms]">Naši kursevi <span class="font-extrabold"> dramske umetnosti</span> daju polaznicima priliku da razviju svoje glumačke veštine i steknu nova iskustva. Učeći od stručnih instruktora i trenirajući s kolegama, polaznici će proširiti svoje poznavanje tehnika glume i razviti svoju kreativnost.</p>
+                <p class="font-sans pb-10 text-sm pr-14 font-medium animation hide-x-left delay-[500ms]">Prijavite se za naše kurseve <span class="font-extrabold">dramske umetnosti</span> ako želite da razvijete svoje umeće i steknete samopouzdanje na pozornici. To je takođe odličan način za razvijanje socijalnih veština i stvaranje novih prijateljstava.</p>
+                <button class="p-5 text-lg font-bold text-white rounded-xl button animation hide-y delay-[700ms]">PRIJAVI SE ODMAH</button>
+              </div>
+              <div class="flex items-end justify-end w-1/2 h-full animation hide-y delay-[200ms]">
+                <img src="assets/img/masks.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full">
+          <img class="w-full opacity-20 -scale-x-100" src="assets/img/lines.png" alt="" />
+        </div>
+        <div class="w-full h-[100vh] flex justify-center items-center bg-white">
+          <div class="flex items-center justify-center w-9/12 h-[100vh] wrapper">
+            <div class="container flex items-center justify-between h-[70%] text-black">
+              <div class="flex items-end justify-end w-1/2 h-full animation hide-y delay-[200ms]">
+                <img src="assets/img/musical.png" alt="" />
+              </div>
+              <div class="flex flex-col items-end justify-between w-1/2 h-full py-14">
+                <h1 class="font-sans font-extrabold text-6xl title text-right animation hide-x-right delay-[200ms] pt-2">MUZIČKE UMETNOSTI</h1>
+                <p class="font-sans py-10 text-sm pl-14 font-medium text-right animation hide-x-right delay-[500ms]">Naši kursevi <span class="font-extrabold">muzičkih umetnosti</span> pružaju polaznicima priliku da razviju svoje muzičke sposobnosti, uključujući sviranje instrumenta, pisanje pesama i produkciju muzike. Instruktori su stručnjaci u svom polju i pružaju individualnu pažnju svakom polazniku. Polaznici će takođe imati priliku da treniraju i izvode muziku sa svojim kolegama.</p>
+                <p class="font-sans pb-10 text-sm pl-14 font-medium animation text-right hide-x-right delay-[500ms]">Prijavite se za naše kurseve <span class="font-extrabold">muzičkih umetnosti</span> ako želite da razvijete svoje umeće, steknete samopouzdanje u izvođenjui steknete nova iskustva u muzičkoj industriji.</p>
+                <button class="p-5 text-lg font-bold text-white rounded-xl button animation hide-y delay-[700ms]">PRIJAVI SE ODMAH</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full">
+          <img class="w-full opacity-20" src="assets/img/lines.png" alt="" />
+        </div>
+        <div class="w-full h-[100vh] flex justify-center items-center bg-white">
+          <div class="flex items-center justify-center w-9/12 h-[100vh] wrapper">
+            <div class="container flex items-center justify-between h-[70%] text-black">
+              <div class="flex flex-col items-start justify-between w-1/2 h-full py-14">
+                <h1 class="font-sans font-extrabold text-6xl title animation hide-x-left delay-[200ms]">VIZUELNE UMETNOSTI</h1>
+                <p class="font-sans py-10 text-sm pr-14 font-medium animation hide-x-left delay-[500ms]">Ukoliko želite da proširite svoje znanje i sposobnosti u umetnosti, naš kurs <span class="font-extrabold">vizuelnih umetnosti</span> je pravi izbor za vas! Iskusni instruktori će voditi polaznike kroz različite tehnike, uključujući slikanje, crtanje, fotografiju i dizajn. Putem individualne pažnje, polaznici će imati priliku da razviju svoje umetničke sposobnosti i steknu nova iskustva u kreativnom okruženju.</p>
+                <p class="font-sans pb-10 text-sm pr-14 font-medium animation hide-x-left delay-[500ms]">Ne oklijevajte, prijavite se sada i uz nas krenite na put uzbudljive avanture u svetu <span class="font-extrabold">vizuelnih umetnosti!</span></p>
+                <button class="p-5 text-lg font-bold text-white rounded-xl button animation hide-y delay-[700ms]">PRIJAVI SE ODMAH</button>
+              </div>
+              <div class="flex px-5 items-center justify-center w-1/2 h-full animation hide-y delay-[200ms]">
+                <img src="assets/img/vizuelne.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full">
+          <img class="w-full opacity-20 -scale-x-100" src="assets/img/lines.png" alt="" />
+        </div>
+        <div class="w-full h-[100vh] flex justify-center items-center bg-white">
+          <div class="flex items-center justify-center w-9/12 h-[100vh] wrapper">
+            <div class="container flex items-center justify-between h-[70%] text-black">
+              <div class="flex items-center justify-center w-1/2 h-full animation hide-y delay-[200ms]">
+                <img src="assets/img/tradicionalne.png" alt="" />
+              </div>
+              <div class="flex flex-col items-start justify-between w-1/2 h-full py-14">
+                <h1 class="font-sans font-extrabold text-6xl title animation hide-x-right delay-[200ms] pt-2">TRADICIONALNE UMETNOSTI</h1>
+                <p class="font-sans py-10 text-sm pr-14 font-medium animation hide-x-right delay-[500ms]">Naš kurs <span class="font-extrabold">tradicionalnih umetnosti</span> pruža polaznicima unikatno iskustvo učenja o starim i poštovanim tehnikama, uključujući izradu tekstila, slikanje ikona, kaligrafiju i druge veštine. Instruktori su autentični majstori u svom polju i pružaju polaznicima priliku da nauče iz prve ruke i da čuvaju ove već gotovo zaboravljene umetničke forme.</p>
+                <p class="font-sans pb-10 text-sm pr-14 font-medium animation hide-x-right delay-[500ms]">Ako želite da se upoznate sa tradicionalnim umetnostima, produbite svoje znanje i steknete nova iskustva, prijavite se za naš kurs <span class="font-extrabold">tradicionalnih umetnosti!</span></p>
+                <button class="p-5 text-lg font-bold text-white rounded-xl button animation hide-y delay-[700ms]">PRIJAVI SE ODMAH</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full">
+          <img class="w-full opacity-20" src="assets/img/lines.png" alt="" />
+        </div>
+        <div class="w-full h-[100vh] flex justify-center items-center bg-white">
+          <div class="flex items-center justify-center w-9/12 h-[100vh] wrapper">
+            <div class="container flex items-center justify-between h-[70%] text-black">
+              <div class="flex flex-col items-start justify-between w-1/2 h-full py-14">
+                <h1 class="font-sans font-extrabold text-6xl title animation hide-x-left delay-[200ms] pt-2">LIČNO USAVRŠAVANJE</h1>
+                <p class="font-sans py-10 text-sm pr-14 font-medium animation hide-x-left delay-[500ms]">Naši kursevi<span class="font-extrabold"> ličnog usavršavanja </span>pomaže polaznicima da ostvare svoj puni potencijal i razviju nove sposobnosti. Putem personalizovanog pristupa i stručnog vodstva, polaznici će imati priliku da istraže svoje interese, uče nove veštine i poboljšaju svoju produktivnost.</p>
+                <p class="font-sans pb-10 text-sm pr-14 font-medium animation hide-x-left delay-[500ms]">Ako želite da unapredite svoj život i karijeru, prijavite se za naše kurseve <span class="font-extrabold"> ličnog usavršavanja </span> i krenite putem samorazvoja i napretka!</p>
+                <button class="p-5 text-lg font-bold text-white rounded-xl button animation hide-y delay-[700ms]">PRIJAVI SE ODMAH</button>
+              </div>
+              <div class="flex items-center justify-center w-1/2 h-full animation hide-y delay-[200ms]">
+                <img class="h-full" src="assets/img/personal.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full">
+          <img class="w-full opacity-20 -scale-x-100" src="assets/img/lines.png" alt="" />
+        </div>
+        <div class="w-full h-[100vh] flex justify-center items-center bg-white">
+          <div class="flex items-center justify-center w-9/12 h-[100vh] wrapper">
+            <div class="container flex items-center justify-between h-[70%] text-black">
+              <div class="flex items-center justify-center w-1/2 h-full animation hide-y delay-[200ms]">
+                <img class="h-full" src="assets/img/ekologija.png" alt="" />
+              </div>
+              <div class="flex flex-col items-start justify-between w-1/2 h-full py-14">
+                <h1 class="font-sans font-extrabold text-6xl title animation hide-x-right delay-[200ms] pt-2">EKOLOGIJA</h1>
+                <p class="font-sans py-10 text-sm pr-14 font-medium animation hide-x-right delay-[500ms]">Naši kursevi <span class="font-extrabold">ekologije</span> pružaju polaznicima praktično i teoretsko znanje o održivom razvoju i zaštiti životne sredine. Učeći o temama kao što su energija, resursi, bioraznolikost i klimatske promene, polaznici će razviti svest o svojoj ulozi u zaštiti planete i konkretne ideje za smanjenje svog uticaja.</p>
+                <p class="font-sans pb-10 text-sm pr-14 font-medium animation hide-x-right delay-[500ms]">Ako želite da steknete znanja koja će vam pomoći da živite više održivo i da doprinesete zaštiti životne sredine, prijavite se za naše kurseve <span class="font-extrabold">ekologije!</span></p>
+                <button class="p-5 text-lg font-bold text-white rounded-xl button animation hide-y delay-[700ms]">PRIJAVI SE ODMAH</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full">
+          <img class="w-full opacity-20" src="assets/img/lines.png" alt="" />
+        </div> -->
+        <div class="w-full h-[100vh] flex justify-center items-center bg-white">
+          <div class="flex items-center justify-center w-full h-full">
+            <div class="container flex flex-col items-center justify-center w-full h-full text-black">
+              <div class="flex flex-col items-center justify-center">
+                <h2 class="font-sans font-extrabold text-7xl title animation hide-x-left delay-[200ms] pt-2">AKTIVNI UPISI</h2>
+                <h3 class="font-serif py-4 text-xl font-medium animation hide-x-right delay-[500ms]">Pridružite nam se što pre!</h3>
+              </div>
+
+              <!-- ODAVDE SVAJPER -->
+              <div class="flex items-center justify-center py-10 xl:w-9/12 lg:relative floating">
+                <div class="items-center justify-center hidden md:flex prev">
+                  <i class="fa-solid fa-chevron-left fa-3x"></i>
+                </div>
+                <div class="flex items-center justify-center swiper">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                      <div class="flex items-center justify-center w-full h-full bg-white rounded-lg shadow-[inset_0_0_10px_rgba(0,0,0,0.5)] clickable"><p>SLIDE 1</p></div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="flex items-center justify-center w-full h-full bg-white rounded-lg shadow-[inset_0_0_10px_rgba(0,0,0,0.5)] clickable"><p>SLIDE 2</p></div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="flex items-center justify-center w-full h-full bg-white rounded-lg shadow-[inset_0_0_10px_rgba(0,0,0,0.5)] clickable"><p>SLIDE 3</p></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="items-center justify-center hidden md:flex next">
+                  <i class="fa-solid fa-chevron-right fa-3x"></i>
+                </div>
+                <div class="absolute bottom-[-100px] swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://kit.fontawesome.com/c3b185193c.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script type="module" src="main.js"></script>
+    <script type="module" src="snake.js"></script>
+  </body>
+</html>

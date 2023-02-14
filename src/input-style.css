@@ -1,0 +1,138 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+html {
+  font-size: calc(12px + (20 - 12) * (100vw - 300px) / (1600-300));
+}
+
+@layer components {
+  .nav-hover {
+    @apply before:content-[""] before:absolute before:w-0 before:h-[5px] before:bottom-[0px] before:rounded-[8px_8px_0_0] transition-all before:bg-gray-200 before:ease-in-out before:duration-150 before:delay-200 before:hover:w-1/3 hover:text-gray-700;
+  }
+  .nav-hover-mobile {
+    @apply before:content-[""] before:absolute before:w-0 before:h-[5px] before:bottom-[-10px] before:rounded-[8px_8px_0_0] transition-all before:bg-gray-700 before:ease-in-out before:duration-150 before:delay-200 before:hover:w-full hover:text-gray-700;
+  }
+  .is-active-mobile {
+    @apply before:content-[""] before:absolute before:h-[3px] before:bottom-[-10px] before:rounded-[8px_8px_0_0] transition-all before:bg-gray-700 before:ease-in-out before:duration-150 before:delay-200 before:w-full hover:text-gray-700 text-gray-700;
+  }
+  .nav-indicator {
+    @apply content-[""] absolute w-0 h-[5px] bottom-0 rounded-[8px_8px_0_0] transition-all bg-gray-200 ease-in-out duration-150 delay-200 -translate-x-1/2;
+  }
+  .is-active {
+    @apply text-gray-700;
+  }
+  .animation {
+    @apply transition-all duration-700 ease-in-out;
+  }
+  .hide-y {
+    @apply translate-y-[20%] opacity-0;
+  }
+  .hide-x-left {
+    @apply translate-x-[-200px] opacity-0;
+  }
+  .hide-x-right {
+    @apply translate-x-[200px] opacity-0;
+  }
+  .swiper {
+    @apply w-full h-[500px];
+  }
+}
+
+.title {
+  background-image: url("https://i.ibb.co/VQhBB1H/Main-00000.png");
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 150% 100%;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-animation 16s ease-in-out infinite;
+}
+.button {
+  background-image: url("https://i.ibb.co/VQhBB1H/Main-00000.png");
+  -webkit-background-clip: background;
+  background-clip: background;
+  background-size: 150% 150%;
+  animation: gradient-animation 16s ease-in-out infinite;
+}
+.button:hover {
+  transition-delay: 0ms;
+  box-shadow: 0px 0px 15px 3px rgb(0, 0, 0, 0.2);
+}
+.floating {
+  animation: floating-animation 5s ease-in-out infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes floating-animation {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(2%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+.swiper-pagination-bullet-active {
+  background-image: url("https://i.ibb.co/VQhBB1H/Main-00000.png") !important;
+  background-size: 150% 150%;
+  animation: gradient-animation 16s ease-in-out infinite;
+}
+@media screen and (max-width: 1280px) {
+  .swiper {
+    width: 80vw !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .swiper {
+    width: 100vw !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .swiper {
+    width: 80vw !important;
+  }
+}
+.swiper-slide {
+  padding: 0.5rem !important;
+  border-radius: 0.5rem !important;
+  background-image: url("https://i.ibb.co/VQhBB1H/Main-00000.png");
+  -webkit-background-clip: background;
+  background-clip: background;
+  background-size: 150% 150%;
+  animation: gradient-animation 16s ease-in-out infinite;
+}
+.next,
+.prev {
+  position: absolute;
+  top: 50%;
+  background-image: url("https://i.ibb.co/VQhBB1H/Main-00000.png");
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 150% 100%;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-animation 16s ease-in-out infinite;
+}
+.next {
+  z-index: 30;
+  right: 7%;
+  transform: translate(50%, -50%);
+}
+.prev {
+  z-index: 30;
+  left: 7%;
+  transform: translate(-50%, -50%);
+}
