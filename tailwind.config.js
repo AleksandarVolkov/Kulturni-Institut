@@ -4,10 +4,10 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      'sans': ['ui-sans-serif', 'Raleway',],
-      'serif': ['ui-serif', 'Cinzel',],
-      'mono': ['ui-monospace', 'DM Mono',],
+      sans: ["ui-sans-serif", "Raleway"],
+      serif: ["ui-serif", "Cinzel"],
+      mono: ["ui-monospace", "DM Mono"],
     },
   },
-  plugins: [require('@tailwindcss/forms')],
-}
+  plugins: [require("@tailwindcss/forms")],
+};

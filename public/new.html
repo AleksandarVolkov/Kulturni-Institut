@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css-reset.css" />
     <link rel="stylesheet" href="output-style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -172,8 +173,10 @@
       </div>
     </header>
     <div class="relative flex items-center justify-center w-full h-full overflow-x-hidden">
+      <div class="vert fixed w-[10px] bg-[url('assets/img/Main-00000.png')] bg-center bg-fill right-0 top-0 z-50 rounded-bl-xl"></div>
+      <div class="vert fixed w-[10px] bg-[url('assets/img/Main-00000.png')] bg-center bg-fill left-0 top-0 z-50 rounded-br-xl"></div>
       <main id="main" class="absolute top-0 left-0 flex flex-col items-center justify-center w-screen transition-all duration-700 ease-in-out md:translate-x-0">
-        <!-- <div class="w-full relative h-[100vh] flex justify-center items-center bg-[url('assets/background.png')] bg-bottom">
+        <div class="w-full relative h-[100vh] flex justify-center items-center bg-[url('assets/background.png')] bg-bottom">
           <div class="w-full h-full flex justify-center items-center overflow-x-hidden bg-[rgba(255,255,255,0.3)]">
             <div class="flex items-center justify-center w-2/3 h-full wrapper">
               <div class="container flex flex-col items-center justify-between text-black h-[400px]">
@@ -187,7 +190,7 @@
             </div>
           </div>
         </div>
-        <div class="w-full">
+        <div class="w-full blur-sm">
           <img class="w-full opacity-20" src="assets/img/lines.png" alt="" />
         </div>
         <div class="w-full h-[100vh] flex justify-center items-center bg-white">
@@ -200,19 +203,19 @@
                 <button class="p-5 text-lg font-bold text-white rounded-xl button animation hide-y delay-[700ms]">PRIJAVI SE ODMAH</button>
               </div>
               <div class="flex items-end justify-end w-1/2 h-full animation hide-y delay-[200ms]">
-                <img src="assets/img/masks.png" alt="" />
+                <img src="assets/img/dramske-umetnosti.png" alt="" />
               </div>
             </div>
           </div>
         </div>
-        <div class="w-full">
+        <div class="w-full blur-sm">
           <img class="w-full opacity-20 -scale-x-100" src="assets/img/lines.png" alt="" />
         </div>
         <div class="w-full h-[100vh] flex justify-center items-center bg-white">
           <div class="flex items-center justify-center w-9/12 h-[100vh] wrapper">
             <div class="container flex items-center justify-between h-[70%] text-black">
               <div class="flex items-end justify-end w-1/2 h-full animation hide-y delay-[200ms]">
-                <img src="assets/img/musical.png" alt="" />
+                <img src="assets/img/muzicke-umetnosti.png" alt="" />
               </div>
               <div class="flex flex-col items-end justify-between w-1/2 h-full py-14">
                 <h1 class="font-sans font-extrabold text-6xl title text-right animation hide-x-right delay-[200ms] pt-2">MUZIČKE UMETNOSTI</h1>
@@ -223,7 +226,7 @@
             </div>
           </div>
         </div>
-        <div class="w-full">
+        <div class="w-full blur-sm">
           <img class="w-full opacity-20" src="assets/img/lines.png" alt="" />
         </div>
         <div class="w-full h-[100vh] flex justify-center items-center bg-white">
@@ -235,31 +238,31 @@
                 <p class="font-sans pb-10 text-sm pr-14 font-medium animation hide-x-left delay-[500ms]">Ne oklijevajte, prijavite se sada i uz nas krenite na put uzbudljive avanture u svetu <span class="font-extrabold">vizuelnih umetnosti!</span></p>
                 <button class="p-5 text-lg font-bold text-white rounded-xl button animation hide-y delay-[700ms]">PRIJAVI SE ODMAH</button>
               </div>
-              <div class="flex px-5 items-center justify-center w-1/2 h-full animation hide-y delay-[200ms]">
-                <img src="assets/img/vizuelne.png" alt="" />
+              <div class="flex items-center justify-center w-1/2 h-full animation hide-y delay-[200ms]">
+                <img src="assets/img/vizuelne-umetnosti.png" alt="" />
               </div>
             </div>
           </div>
         </div>
-        <div class="w-full">
+        <div class="w-full blur-sm">
           <img class="w-full opacity-20 -scale-x-100" src="assets/img/lines.png" alt="" />
         </div>
         <div class="w-full h-[100vh] flex justify-center items-center bg-white">
           <div class="flex items-center justify-center w-9/12 h-[100vh] wrapper">
             <div class="container flex items-center justify-between h-[70%] text-black">
               <div class="flex items-center justify-center w-1/2 h-full animation hide-y delay-[200ms]">
-                <img src="assets/img/tradicionalne.png" alt="" />
+                <img src="assets/img/tradicionalne-umetnosti.png" alt="" />
               </div>
-              <div class="flex flex-col items-start justify-between w-1/2 h-full py-14">
-                <h1 class="font-sans font-extrabold text-6xl title animation hide-x-right delay-[200ms] pt-2">TRADICIONALNE UMETNOSTI</h1>
-                <p class="font-sans py-10 text-sm pr-14 font-medium animation hide-x-right delay-[500ms]">Naš kurs <span class="font-extrabold">tradicionalnih umetnosti</span> pruža polaznicima unikatno iskustvo učenja o starim i poštovanim tehnikama, uključujući izradu tekstila, slikanje ikona, kaligrafiju i druge veštine. Instruktori su autentični majstori u svom polju i pružaju polaznicima priliku da nauče iz prve ruke i da čuvaju ove već gotovo zaboravljene umetničke forme.</p>
-                <p class="font-sans pb-10 text-sm pr-14 font-medium animation hide-x-right delay-[500ms]">Ako želite da se upoznate sa tradicionalnim umetnostima, produbite svoje znanje i steknete nova iskustva, prijavite se za naš kurs <span class="font-extrabold">tradicionalnih umetnosti!</span></p>
+              <div class="flex flex-col items-end justify-between w-1/2 h-full py-14">
+                <h1 class="font-sans font-extrabold text-6xl title animation text-end hide-x-right delay-[200ms] pt-2">TRADICIONALNE UMETNOSTI</h1>
+                <p class="font-sans py-10 text-sm pl-14 font-medium animation text-end hide-x-right delay-[500ms]">Naš kurs <span class="font-extrabold">tradicionalnih umetnosti</span> pruža polaznicima unikatno iskustvo učenja o starim i poštovanim tehnikama, uključujući izradu tekstila, slikanje ikona, kaligrafiju i druge veštine. Instruktori su autentični majstori u svom polju i pružaju polaznicima priliku da nauče iz prve ruke i da čuvaju ove već gotovo zaboravljene umetničke forme.</p>
+                <p class="font-sans pb-10 text-sm pl-14 font-medium animation text-end hide-x-right delay-[500ms]">Ako želite da se upoznate sa tradicionalnim umetnostima, produbite svoje znanje i steknete nova iskustva, prijavite se za naš kurs <span class="font-extrabold">tradicionalnih umetnosti!</span></p>
                 <button class="p-5 text-lg font-bold text-white rounded-xl button animation hide-y delay-[700ms]">PRIJAVI SE ODMAH</button>
               </div>
             </div>
           </div>
         </div>
-        <div class="w-full">
+        <div class="w-full blur-sm">
           <img class="w-full opacity-20" src="assets/img/lines.png" alt="" />
         </div>
         <div class="w-full h-[100vh] flex justify-center items-center bg-white">
@@ -272,12 +275,12 @@
                 <button class="p-5 text-lg font-bold text-white rounded-xl button animation hide-y delay-[700ms]">PRIJAVI SE ODMAH</button>
               </div>
               <div class="flex items-center justify-center w-1/2 h-full animation hide-y delay-[200ms]">
-                <img class="h-full" src="assets/img/personal.png" alt="" />
+                <img class="h-full" src="assets/img/licno-usavrsavanje.png" alt="" />
               </div>
             </div>
           </div>
         </div>
-        <div class="w-full">
+        <div class="w-full blur-sm">
           <img class="w-full opacity-20 -scale-x-100" src="assets/img/lines.png" alt="" />
         </div>
         <div class="w-full h-[100vh] flex justify-center items-center bg-white">
@@ -286,60 +289,71 @@
               <div class="flex items-center justify-center w-1/2 h-full animation hide-y delay-[200ms]">
                 <img class="h-full" src="assets/img/ekologija.png" alt="" />
               </div>
-              <div class="flex flex-col items-start justify-between w-1/2 h-full py-14">
-                <h1 class="font-sans font-extrabold text-6xl title animation hide-x-right delay-[200ms] pt-2">EKOLOGIJA</h1>
-                <p class="font-sans py-10 text-sm pr-14 font-medium animation hide-x-right delay-[500ms]">Naši kursevi <span class="font-extrabold">ekologije</span> pružaju polaznicima praktično i teoretsko znanje o održivom razvoju i zaštiti životne sredine. Učeći o temama kao što su energija, resursi, bioraznolikost i klimatske promene, polaznici će razviti svest o svojoj ulozi u zaštiti planete i konkretne ideje za smanjenje svog uticaja.</p>
-                <p class="font-sans pb-10 text-sm pr-14 font-medium animation hide-x-right delay-[500ms]">Ako želite da steknete znanja koja će vam pomoći da živite više održivo i da doprinesete zaštiti životne sredine, prijavite se za naše kurseve <span class="font-extrabold">ekologije!</span></p>
+              <div class="flex flex-col items-end justify-between w-1/2 h-full py-14">
+                <h1 class="font-sans font-extrabold text-6xl title animation text-end hide-x-right delay-[200ms] pt-2">EKOLOGIJA</h1>
+                <p class="font-sans py-10 text-sm pl-14 font-medium animation text-end hide-x-right delay-[500ms]">Naši kursevi <span class="font-extrabold">ekologije</span> pružaju polaznicima praktično i teoretsko znanje o održivom razvoju i zaštiti životne sredine. Učeći o temama kao što su energija, resursi, bioraznolikost i klimatske promene, polaznici će razviti svest o svojoj ulozi u zaštiti planete i konkretne ideje za smanjenje svog uticaja.</p>
+                <p class="font-sans pb-10 text-sm pl-14 font-medium animation text-end hide-x-right delay-[500ms]">Ako želite da steknete znanja koja će vam pomoći da živite više održivo i da doprinesete zaštiti životne sredine, prijavite se za naše kurseve <span class="font-extrabold">ekologije!</span></p>
                 <button class="p-5 text-lg font-bold text-white rounded-xl button animation hide-y delay-[700ms]">PRIJAVI SE ODMAH</button>
               </div>
             </div>
           </div>
         </div>
-        <div class="w-full">
+        <div class="w-full blur-sm">
           <img class="w-full opacity-20" src="assets/img/lines.png" alt="" />
-        </div> -->
-        <div class="w-full h-[100vh] flex justify-center items-center bg-white">
-          <div class="flex items-center justify-center w-full h-full">
-            <div class="container flex flex-col items-center justify-center w-full h-full text-black">
-              <div class="flex flex-col items-center justify-center">
-                <h2 class="font-sans font-extrabold text-7xl title animation hide-x-left delay-[200ms] pt-2">AKTIVNI UPISI</h2>
-                <h3 class="font-serif py-4 text-xl font-medium animation hide-x-right delay-[500ms]">Pridružite nam se što pre!</h3>
-              </div>
+        </div>
 
-              <!-- ODAVDE SVAJPER -->
-              <div class="flex items-center justify-center py-10 xl:w-9/12 lg:relative floating">
-                <div class="items-center justify-center hidden md:flex prev">
-                  <i class="fa-solid fa-chevron-left fa-3x"></i>
-                </div>
-                <div class="flex items-center justify-center swiper">
-                  <!-- Additional required wrapper -->
-                  <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                      <div class="flex items-center justify-center w-full h-full bg-white rounded-lg shadow-[inset_0_0_10px_rgba(0,0,0,0.5)] clickable"><p>SLIDE 1</p></div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="flex items-center justify-center w-full h-full bg-white rounded-lg shadow-[inset_0_0_10px_rgba(0,0,0,0.5)] clickable"><p>SLIDE 2</p></div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="flex items-center justify-center w-full h-full bg-white rounded-lg shadow-[inset_0_0_10px_rgba(0,0,0,0.5)] clickable"><p>SLIDE 3</p></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="items-center justify-center hidden md:flex next">
-                  <i class="fa-solid fa-chevron-right fa-3x"></i>
-                </div>
-                <div class="absolute bottom-[-100px] swiper-pagination"></div>
-              </div>
-            </div>
+        <div class="flex flex-col items-center justify-center w-full h-full text-black">
+          <div class="flex flex-col items-center justify-center">
+            <h2 class="font-sans font-extrabold text-7xl title animation hide-x-left delay-[200ms] pt-2">AKTIVNI UPISI</h2>
+            <h3 class="font-serif py-4 text-xl font-medium animation hide-x-right delay-[500ms]">Pridružite nam se što pre!</h3>
           </div>
+          <div class="flex items-center justify-center w-full py-10 lg:relative floating">
+            <div id="prev-1" class="items-center justify-center hidden p-5 md:flex prev">
+              <i class="fa-solid fa-chevron-left fa-3x"></i>
+            </div>
+            <div id="swiper1" class="swiper">
+              <div id="swiper-wrapper-1" class="swiper-wrapper swiper-wrapper-first"></div>
+            </div>
+            <div id="next-1" class="items-center justify-center hidden p-5 md:flex next">
+              <i class="fa-solid fa-chevron-right fa-3x"></i>
+            </div>
+            <div id="swiper-pagination-1" class="absolute bottom-[-100px] swiper-pagination"></div>
+          </div>
+        </div>
+
+        <div class="w-full blur-sm">
+          <img class="w-full opacity-20 -scale-x-100" src="assets/img/lines.png" alt="" />
+        </div>
+
+        <div class="flex flex-col items-center justify-center w-full h-full text-black">
+          <div class="flex flex-col items-center justify-center">
+            <h2 class="font-sans font-extrabold text-7xl title animation hide-x-left delay-[200ms] pt-2">AKTIVNI UPISI</h2>
+            <h3 class="font-serif py-4 text-xl font-medium animation hide-x-right delay-[500ms]">Pridružite nam se što pre!</h3>
+          </div>
+          <div class="flex items-center justify-center w-full py-10 lg:relative floating">
+            <div id="prev-2" class="items-center justify-center hidden p-5 md:flex prev">
+              <i class="fa-solid fa-chevron-left fa-3x"></i>
+            </div>
+            <div id="swiper2" class="swiper">
+              <div id="swiper-wrapper-2" class="swiper-wrapper"></div>
+            </div>
+            <div id="next-2" class="items-center justify-center hidden p-5 md:flex next">
+              <i class="fa-solid fa-chevron-right fa-3x"></i>
+            </div>
+            <div id="swiper-pagination-2" class="absolute bottom-[-100px] swiper-pagination"></div>
+          </div>
+        </div>
+
+        <div class="w-full blur-sm">
+          <img class="w-full opacity-20" src="assets/img/lines.png" alt="" />
         </div>
       </main>
     </div>
 
     <script src="https://kit.fontawesome.com/c3b185193c.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script type="module" src="main.js"></script>
+    <script type="module" src="swiper-slider.js"></script>
     <script type="module" src="snake.js"></script>
+    <script type="module" src="main.js"></script>
   </body>
 </html>

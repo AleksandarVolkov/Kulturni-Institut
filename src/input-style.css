@@ -8,6 +8,15 @@ html {
   font-size: calc(12px + (20 - 12) * (100vw - 300px) / (1600-300));
 }
 
+*::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 @layer components {
   .nav-hover {
     @apply before:content-[""] before:absolute before:w-0 before:h-[5px] before:bottom-[0px] before:rounded-[8px_8px_0_0] transition-all before:bg-gray-200 before:ease-in-out before:duration-150 before:delay-200 before:hover:w-1/3 hover:text-gray-700;
@@ -39,10 +48,15 @@ html {
   .swiper {
     @apply w-full h-[500px];
   }
+  .text-xxs {
+    @apply text-[0.7rem];
+  }
+  .slide-shadow {
+    @apply before:content-[""] before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:shadow-[inset_0_0_10px_rgba(0,0,0,0.5)] before:w-full before:h-full;
+  }
 }
-
 .title {
-  background-image: url("https://i.ibb.co/VQhBB1H/Main-00000.png");
+  background-image: url("https://i.ibb.co/VQhBB1H/Main-00000.jpg");
   -webkit-background-clip: text;
   background-clip: text;
   background-size: 150% 100%;
@@ -50,11 +64,12 @@ html {
   animation: gradient-animation 16s ease-in-out infinite;
 }
 .button {
-  background-image: url("https://i.ibb.co/VQhBB1H/Main-00000.png");
+  background-image: url("https://i.ibb.co/VQhBB1H/Main-00000.jpg");
   -webkit-background-clip: background;
   background-clip: background;
   background-size: 150% 150%;
   animation: gradient-animation 16s ease-in-out infinite;
+  z-index: 100;
 }
 .button:hover {
   transition-delay: 0ms;
@@ -87,29 +102,22 @@ html {
   }
 }
 .swiper-pagination-bullet-active {
-  background-image: url("https://i.ibb.co/VQhBB1H/Main-00000.png") !important;
+  background-image: url("https://i.ibb.co/VQhBB1H/Main-00000.jpg") !important;
   background-size: 150% 150%;
   animation: gradient-animation 16s ease-in-out infinite;
 }
-@media screen and (max-width: 1280px) {
-  .swiper {
-    width: 80vw !important;
-  }
+
+.swiper {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
-@media screen and (max-width: 1024px) {
-  .swiper {
-    width: 100vw !important;
-  }
-}
-@media screen and (max-width: 768px) {
-  .swiper {
-    width: 80vw !important;
-  }
-}
-.swiper-slide {
+.colorful-border {
   padding: 0.5rem !important;
-  border-radius: 0.5rem !important;
-  background-image: url("https://i.ibb.co/VQhBB1H/Main-00000.png");
+  background-image: url("https://i.ibb.co/VQhBB1H/Main-00000.jpg");
   -webkit-background-clip: background;
   background-clip: background;
   background-size: 150% 150%;
@@ -119,7 +127,7 @@ html {
 .prev {
   position: absolute;
   top: 50%;
-  background-image: url("https://i.ibb.co/VQhBB1H/Main-00000.png");
+  background-image: url("https://i.ibb.co/VQhBB1H/Main-00000.jpg");
   -webkit-background-clip: text;
   background-clip: text;
   background-size: 150% 100%;
