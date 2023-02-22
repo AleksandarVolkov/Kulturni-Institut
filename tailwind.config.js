@@ -9,5 +9,4 @@ module.exports = {
       mono: ["ui-monospace", "DM Mono"],
     },
   },
-  plugins: [require("@tailwindcss/forms")],
 };

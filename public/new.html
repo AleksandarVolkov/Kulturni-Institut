@@ -173,11 +173,20 @@
       </div>
     </header>
     <div class="relative flex items-center justify-center w-full h-full overflow-x-hidden">
-      <div class="vert fixed w-[10px] bg-[url('assets/img/Main-00000.png')] bg-center bg-fill right-0 top-0 z-50 rounded-bl-xl"></div>
-      <div class="vert fixed w-[10px] bg-[url('assets/img/Main-00000.png')] bg-center bg-fill left-0 top-0 z-50 rounded-br-xl"></div>
+      <div class="fixed top-0 right-0 z-50 w-2 overflow-hidden bg-center vert bg-fill rounded-bl-xl">
+        <div class="absolute w-[1600px] h-[100vh] animation-bg"></div>
+      </div>
+      <div class="fixed top-0 left-0 z-50 w-2 overflow-hidden bg-center vert bg-fill rounded-br-xl">
+        <div class="absolute w-[1600px] h-[100vh] animation-bg"></div>
+      </div>
       <main id="main" class="absolute top-0 left-0 flex flex-col items-center justify-center w-screen transition-all duration-700 ease-in-out md:translate-x-0">
-        <div class="w-full relative h-[100vh] flex justify-center items-center bg-[url('assets/background.png')] bg-bottom">
-          <div class="w-full h-full flex justify-center items-center overflow-x-hidden bg-[rgba(255,255,255,0.3)]">
+        <div class="w-full relative h-[100vh] flex justify-center items-center focused scale-[98%]">
+          <div class="absolute left-0 w-full h-[95%] z-0 overflow-hidden mt-[-1000px]">
+            <video class="absolute z-10 h-full w-full" autoplay loop poster preload muted playsinline>
+              <source src="assets/img/KI.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="z-10 w-full h-full flex justify-center items-center">
             <div class="flex items-center justify-center w-2/3 h-full wrapper">
               <div class="container flex flex-col items-center justify-between text-black h-[400px]">
                 <span class="font-serif text-4xl font-medium text-center animation hide-y">Stvori svoju</span>
@@ -190,10 +199,12 @@
             </div>
           </div>
         </div>
-        <div class="w-full blur-sm">
+
+        <div class="w-full blur-[3px] divider">
           <img class="w-full opacity-20" src="assets/img/lines.png" alt="" />
         </div>
-        <div class="w-full h-[100vh] flex justify-center items-center bg-white">
+
+        <div class="w-full h-[80vh] flex justify-center items-center bg-white focused scale-[98%]">
           <div class="flex items-center justify-center w-9/12 h-[100vh] wrapper">
             <div class="container flex items-center justify-between h-[70%] text-black">
               <div class="flex flex-col items-start justify-between w-1/2 h-full py-14">
@@ -208,10 +219,12 @@
             </div>
           </div>
         </div>
-        <div class="w-full blur-sm">
+
+        <div class="w-full blur-[3px] divider">
           <img class="w-full opacity-20 -scale-x-100" src="assets/img/lines.png" alt="" />
         </div>
-        <div class="w-full h-[100vh] flex justify-center items-center bg-white">
+
+        <div class="w-full h-[80vh] flex justify-center items-center bg-white focused scale-[98%]">
           <div class="flex items-center justify-center w-9/12 h-[100vh] wrapper">
             <div class="container flex items-center justify-between h-[70%] text-black">
               <div class="flex items-end justify-end w-1/2 h-full animation hide-y delay-[200ms]">
@@ -226,10 +239,12 @@
             </div>
           </div>
         </div>
-        <div class="w-full blur-sm">
+
+        <div class="w-full blur-[3px] divider">
           <img class="w-full opacity-20" src="assets/img/lines.png" alt="" />
         </div>
-        <div class="w-full h-[100vh] flex justify-center items-center bg-white">
+
+        <div class="w-full h-[80vh] flex justify-center items-center bg-white focused scale-[98%]">
           <div class="flex items-center justify-center w-9/12 h-[100vh] wrapper">
             <div class="container flex items-center justify-between h-[70%] text-black">
               <div class="flex flex-col items-start justify-between w-1/2 h-full py-14">
@@ -244,10 +259,12 @@
             </div>
           </div>
         </div>
-        <div class="w-full blur-sm">
+
+        <div class="w-full blur-[3px] divider">
           <img class="w-full opacity-20 -scale-x-100" src="assets/img/lines.png" alt="" />
         </div>
-        <div class="w-full h-[100vh] flex justify-center items-center bg-white">
+
+        <div class="w-full h-[80vh] flex justify-center items-center bg-white focused scale-[98%]">
           <div class="flex items-center justify-center w-9/12 h-[100vh] wrapper">
             <div class="container flex items-center justify-between h-[70%] text-black">
               <div class="flex items-center justify-center w-1/2 h-full animation hide-y delay-[200ms]">
@@ -262,10 +279,12 @@
             </div>
           </div>
         </div>
-        <div class="w-full blur-sm">
+
+        <div class="w-full blur-[3px] divider">
           <img class="w-full opacity-20" src="assets/img/lines.png" alt="" />
         </div>
-        <div class="w-full h-[100vh] flex justify-center items-center bg-white">
+
+        <div class="w-full h-[80vh] flex justify-center items-center bg-white focused scale-[98%]">
           <div class="flex items-center justify-center w-9/12 h-[100vh] wrapper">
             <div class="container flex items-center justify-between h-[70%] text-black">
               <div class="flex flex-col items-start justify-between w-1/2 h-full py-14">
@@ -280,10 +299,12 @@
             </div>
           </div>
         </div>
-        <div class="w-full blur-sm">
+
+        <div class="w-full blur-[3px] divider">
           <img class="w-full opacity-20 -scale-x-100" src="assets/img/lines.png" alt="" />
         </div>
-        <div class="w-full h-[100vh] flex justify-center items-center bg-white">
+
+        <div class="w-full h-[80vh] flex justify-center items-center bg-white focused scale-[98%]">
           <div class="flex items-center justify-center w-9/12 h-[100vh] wrapper">
             <div class="container flex items-center justify-between h-[70%] text-black">
               <div class="flex items-center justify-center w-1/2 h-full animation hide-y delay-[200ms]">
@@ -298,14 +319,14 @@
             </div>
           </div>
         </div>
-        <div class="w-full blur-sm">
+        <div class="w-full blur-[3px] divider">
           <img class="w-full opacity-20" src="assets/img/lines.png" alt="" />
         </div>
 
-        <div class="flex flex-col items-center justify-center w-full h-full text-black">
+        <div class="flex flex-col items-center justify-center w-full h-full text-black focused scale-[98%]">
           <div class="flex flex-col items-center justify-center">
-            <h2 class="font-sans font-extrabold text-7xl title animation hide-x-left delay-[200ms] pt-2">AKTIVNI UPISI</h2>
-            <h3 class="font-serif py-4 text-xl font-medium animation hide-x-right delay-[500ms]">Pridružite nam se što pre!</h3>
+            <h2 class="font-sans font-extrabold text-7xl title animation hide-y delay-[200ms] pt-2">AKTIVNI UPISI</h2>
+            <h3 class="font-serif py-4 text-xl font-medium animation hide-y delay-[500ms]">Pridružite nam se što pre!</h3>
           </div>
           <div class="flex items-center justify-center w-full py-10 lg:relative floating">
             <div id="prev-1" class="items-center justify-center hidden p-5 md:flex prev">
@@ -321,14 +342,14 @@
           </div>
         </div>
 
-        <div class="w-full blur-sm">
+        <div class="w-full blur-[3px] divider">
           <img class="w-full opacity-20 -scale-x-100" src="assets/img/lines.png" alt="" />
         </div>
 
-        <div class="flex flex-col items-center justify-center w-full h-full text-black">
+        <div class="flex flex-col items-center justify-center w-full h-full text-black focused scale-[98%]">
           <div class="flex flex-col items-center justify-center">
-            <h2 class="font-sans font-extrabold text-7xl title animation hide-x-left delay-[200ms] pt-2">AKTIVNI UPISI</h2>
-            <h3 class="font-serif py-4 text-xl font-medium animation hide-x-right delay-[500ms]">Pridružite nam se što pre!</h3>
+            <h2 class="font-sans font-extrabold text-7xl title animation hide-y delay-[200ms] pt-2">NAŠI PROFESORI</h2>
+            <h3 class="font-serif py-4 text-xl font-medium animation hide-y delay-[500ms]">Upoznajte naš tim stručnjaka!</h3>
           </div>
           <div class="flex items-center justify-center w-full py-10 lg:relative floating">
             <div id="prev-2" class="items-center justify-center hidden p-5 md:flex prev">
@@ -344,8 +365,162 @@
           </div>
         </div>
 
-        <div class="w-full blur-sm">
+        <div class="w-full blur-[3px] divider">
           <img class="w-full opacity-20" src="assets/img/lines.png" alt="" />
+        </div>
+
+        <div class="w-full h-[100vh] flex justify-center items-center bg-white focused scale-[98%]">
+          <div class="flex items-center justify-center w-9/12 h-[100vh] wrapper">
+            <div class="flex flex-col items-center justify-between w-2/3 h-[70%] py-14">
+              <h1 class="font-sans font-extrabold text-6xl title animation text-center hide-y delay-[200ms] pt-2 uppercase">Pozivamo vas da se pridružite Institutu</h1>
+              <p class="font-serif py-10 text-xl font-medium animation text-center hide-y delay-[500ms]">Postanete deo zajednice kreativaca koji stvaraju umetnost koja inspiriše i motiviše druge</p>
+              <p class="font-sans pb-10 text-md px-16 font-medium animation text-center hide-y delay-[500ms]">Naši kursevi su dizajnirani tako da vam pruže mogućnost da razvijete svoje talente, steknete nova znanja i veštine, i pronađete sopstveni glas u umetnosti. Prijavite se danas i postanite deo naše misije da ojačamo i oplemenimo svet kroz umetnost!</p>
+              <button class="p-5 text-lg font-bold text-white rounded-xl button animation hide-y delay-[700ms] uppercase">Pridružite se</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full blur-[3px] divider">
+          <img class="w-full opacity-20 -scale-x-100" src="assets/img/lines.png" alt="" />
+        </div>
+
+        <div class="w-full h-[100vh] flex justify-center items-center bg-white focused scale-[98%]">
+          <div class="flex flex-col items-center justify-center w-9/12 h-[100vh] wrapper">
+            <div class="relative flex items-center justify-center w-full h-[70%]">
+              <div class="absolute w-full h-full overflow-hidden right-2 top-2 rounded-br-2xl rounded-tl-2xl">
+                <div class="absolute w-[200%] h-full animation-bg"></div>
+              </div>
+              <div class="relative flex justify-start w-full h-full px-10 bg-white">
+                <div class="flex flex-col items-start justify-start w-1/2 h-full py-14">
+                  <h1 class="font-sans font-extrabold text-6xl title animation text-start hide-y delay-[200ms] pt-2 uppercase">POSETITE NAŠ BLOG</h1>
+                  <p class="font-serif py-10 text-xl font-medium animation text-start hide-y delay-[500ms]">Posetite naš blog i budite u toku sa najnovijim dešavanjima u našoj zajednici.</p>
+                  <button class="p-5 text-lg font-bold text-white rounded-xl button animation hide-y delay-[700ms] uppercase">Posetite blog</button>
+                </div>
+                <div class="flex items-center justify-center w-1/2 lg:relative">
+                  <div id="swiper3" class="swiper">
+                    <div id="swiper-wrapper-3" class="swiper-wrapper"></div>
+                  </div>
+                </div>
+                <div id="next-3" class="items-center justify-center hidden p-5 md:flex next">
+                  <i class="fa-solid fa-chevron-right fa-3x"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full blur-[3px] divider">
+          <img class="w-full opacity-20" src="assets/img/lines.png" alt="" />
+        </div>
+
+        <div class="w-full h-[100vh] flex justify-center items-center bg-white focused scale-[98%]">
+          <div class="flex flex-col items-center justify-center w-9/12 h-[100vh] wrapper bg-[url('assets/img/bg-colorful.png')] bg-contain bg-no-repeat bg-center">
+            <div class="flex flex-col items-center justify-center w-10/12 py-6 xl:w-7/12 glass">
+              <h1 class="font-sans font-extrabold text-6xl title animation text-center hide-y delay-[200ms] pt-2 uppercase">Pretražite naše kurseve</h1>
+              <form class="flex flex-col items-center justify-center w-full" action="">
+                <div class="py-4 w-[400px]">
+                  <div class="flex flex-col items-center justify-center w-full h-full select-menu">
+                    <div class="relative flex items-center justify-center w-full h-full p-1 overflow-hidden rounded-[2rem]">
+                      <div class="absolute w-[200%] left-0 h-[1000%] animation-bg z-0"></div>
+
+                      <div class="z-50 flex cursor-pointer relative pointer-events-auto p-2 items-center justify-center w-full h-full bg-white select-btn rounded-[2rem]">
+                        <span class="z-50 pointer-events-none select-none sBtn-text">Departman</span>
+                        <div class="absolute flex items-center justify-center mr-[5%] right-0">
+                          <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="relative w-full h-0">
+                      <ul class="absolute w-full bg-white border-[0.1rem] border-gray-100 border-solid options rounded-[2rem] overflow-hidden">
+                        <li class="flex items-center justify-center p-2 bg-white option hover:bg-gray-100">
+                          <span class="text-center text-gray-600 option-text text-md">Dramske umetnosti</span>
+                        </li>
+                        <li class="flex items-center justify-center p-2 bg-white option hover:bg-gray-100">
+                          <span class="text-center text-gray-600 option-text text-md">Muzičke umetnosti</span>
+                        </li>
+                        <li class="flex items-center justify-center p-2 bg-white option hover:bg-gray-100">
+                          <span class="text-center text-gray-600 option-text text-md">Vizuelne umetnosti</span>
+                        </li>
+                        <li class="flex items-center justify-center p-2 bg-white option hover:bg-gray-100">
+                          <span class="text-center text-gray-600 option-text text-md">Tradicionalne umetnosti</span>
+                        </li>
+                        <li class="flex items-center justify-center p-2 bg-white option hover:bg-gray-100">
+                          <span class="text-center text-gray-600 option-text text-md">Lično usavršavanje</span>
+                        </li>
+                        <li class="flex items-center justify-center p-2 bg-white option hover:bg-gray-100">
+                          <span class="text-center text-gray-600 option-text text-md">Ekologija</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="py-4 w-[400px]">
+                  <div class="flex flex-col items-center justify-center w-full h-full select-menu">
+                    <div class="relative flex items-center justify-center w-full h-full p-1 overflow-hidden rounded-[2rem]">
+                      <div class="absolute w-[200%] left-0 h-[1000%] animation-bg z-0"></div>
+
+                      <div class="z-50 flex cursor-pointer relative pointer-events-auto p-2 items-center justify-center w-full h-full bg-white select-btn rounded-[2rem]">
+                        <span class="z-50 pointer-events-none select-none sBtn-text">Profesor</span>
+                        <div class="absolute flex items-center justify-center mr-[5%] right-0">
+                          <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="relative w-full h-0">
+                      <ul class="absolute w-full bg-white border-[0.1rem] border-gray-100 border-solid options rounded-[2rem] overflow-hidden">
+                        <li class="flex items-center justify-center p-2 bg-white cursor-pointer option hover:bg-gray-100">
+                          <span class="text-center text-gray-600 option-text text-md">Tadija Miletić</span>
+                        </li>
+                        <li class="flex items-center justify-center p-2 bg-white cursor-pointer option hover:bg-gray-100">
+                          <span class="text-center text-gray-600 option-text text-md">Aleksandar Volkov</span>
+                        </li>
+                        <li class="flex items-center justify-center p-2 bg-white cursor-pointer option hover:bg-gray-100">
+                          <span class="text-center text-gray-600 option-text text-md">Branko Žujković</span>
+                        </li>
+                        <li class="flex items-center justify-center p-2 bg-white cursor-pointer option hover:bg-gray-100">
+                          <span class="text-center text-gray-600 option-text text-md">Dina Miletić</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="py-4 w-[400px]">
+                  <div class="flex flex-col items-center justify-center w-full h-full select-menu">
+                    <div class="relative flex items-center justify-center w-full h-full p-1 overflow-hidden rounded-[2rem]">
+                      <div class="absolute w-[200%] left-0 h-[1000%] animation-bg z-0"></div>
+
+                      <div class="z-50 flex cursor-pointer relative pointer-events-auto p-2 items-center justify-center w-full h-full bg-white select-btn rounded-[2rem]">
+                        <span class="z-50 pointer-events-none select-none sBtn-text">Njivo kursa</span>
+                        <div class="absolute flex items-center justify-center mr-[5%] right-0">
+                          <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="relative w-full h-0">
+                      <ul class="absolute w-full bg-white border-[0.1rem] border-gray-100 border-solid options rounded-[2rem] overflow-hidden">
+                        <li class="flex items-center justify-center p-2 bg-white cursor-pointer option hover:bg-gray-100">
+                          <span class="text-center text-gray-600 option-text text-md">Početnički</span>
+                        </li>
+                        <li class="flex items-center justify-center p-2 bg-white cursor-pointer option hover:bg-gray-100">
+                          <span class="text-center text-gray-600 option-text text-md">Srednji</span>
+                        </li>
+                        <li class="flex items-center justify-center p-2 bg-white cursor-pointer option hover:bg-gray-100">
+                          <span class="text-center text-gray-600 option-text text-md">Završni</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="pt-4 w-[400px]">
+                  <button class="p-4 text-lg w-full font-bold text-white rounded-xl button animation hide-y delay-[700ms]">Pretraži</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full blur-[3px] divider">
+          <img class="w-full opacity-20 -scale-x-100" src="assets/img/lines.png" alt="" />
         </div>
       </main>
     </div>
@@ -353,6 +528,7 @@
     <script src="https://kit.fontawesome.com/c3b185193c.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script type="module" src="swiper-slider.js"></script>
+    <script type="module" src="dropdown.js"></script>
     <script type="module" src="snake.js"></script>
     <script type="module" src="main.js"></script>
   </body>

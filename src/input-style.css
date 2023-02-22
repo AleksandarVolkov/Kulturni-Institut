@@ -56,7 +56,7 @@ html {
   }
 }
 .title {
-  background-image: url("https://i.ibb.co/VQhBB1H/Main-00000.jpg");
+  background-image: url("assets/img/Main-00000.jpg");
   -webkit-background-clip: text;
   background-clip: text;
   background-size: 150% 100%;
@@ -64,7 +64,7 @@ html {
   animation: gradient-animation 16s ease-in-out infinite;
 }
 .button {
-  background-image: url("https://i.ibb.co/VQhBB1H/Main-00000.jpg");
+  background-image: url("assets/img/Main-00000.jpg");
   -webkit-background-clip: background;
   background-clip: background;
   background-size: 150% 150%;
@@ -76,9 +76,12 @@ html {
   box-shadow: 0px 0px 15px 3px rgb(0, 0, 0, 0.2);
 }
 .floating {
-  animation: floating-animation 5s ease-in-out infinite;
+  animation: floating-animation 10s ease-in-out infinite;
 }
 
+.divider {
+  animation: divider-animation 16s ease-in-out infinite;
+}
 @keyframes gradient-animation {
   0% {
     background-position: 0% 50%;
@@ -88,6 +91,17 @@ html {
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+@keyframes divider-animation {
+  0% {
+    transform: rotate(-1deg) scale(1.1) translate(-2%, 0%);
+  }
+  50% {
+    transform: rotate(1deg) scale(1.2) translate(2%, 0%);
+  }
+  100% {
+    transform: rotate(-1deg) scale(1.1) translate(-2%, 0%);
   }
 }
 @keyframes floating-animation {
@@ -102,7 +116,7 @@ html {
   }
 }
 .swiper-pagination-bullet-active {
-  background-image: url("https://i.ibb.co/VQhBB1H/Main-00000.jpg") !important;
+  background-image: url("assets/img/Main-00000.jpg") !important;
   background-size: 150% 150%;
   animation: gradient-animation 16s ease-in-out infinite;
 }
@@ -117,7 +131,7 @@ html {
 }
 .colorful-border {
   padding: 0.5rem !important;
-  background-image: url("https://i.ibb.co/VQhBB1H/Main-00000.jpg");
+  background-image: url("assets/img/Main-00000.jpg");
   -webkit-background-clip: background;
   background-clip: background;
   background-size: 150% 150%;
@@ -127,20 +141,117 @@ html {
 .prev {
   position: absolute;
   top: 50%;
-  background-image: url("https://i.ibb.co/VQhBB1H/Main-00000.jpg");
+  background-image: url("assets/img/Main-00000.jpg");
   -webkit-background-clip: text;
   background-clip: text;
   background-size: 150% 100%;
   -webkit-text-fill-color: transparent;
   animation: gradient-animation 16s ease-in-out infinite;
 }
-.next {
+#next-1,
+#next-2 {
   z-index: 30;
   right: 7%;
+  transform: translate(50%, -50%);
+}
+#next-3 {
+  z-index: 30;
+  right: 0%;
   transform: translate(50%, -50%);
 }
 .prev {
   z-index: 30;
   left: 7%;
   transform: translate(-50%, -50%);
+}
+
+.animation-bg {
+  background-image: url("assets/img/Main-00000.jpg");
+  -webkit-background-clip: background;
+  background-clip: background;
+  background-size: 150% 150%;
+  animation: gradient-animation-transform 16s ease-in-out infinite;
+}
+@keyframes gradient-animation-transform {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.focused {
+  transition: all 0.7s ease-in-out;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.select-menu .options {
+  z-index: 0;
+  pointer-events: none;
+  cursor: none;
+  animation-name: fadeInDown;
+  -webkit-animation-name: fadeInDown;
+  animation-duration: 0.35s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 0.35s;
+  -webkit-animation-fill-mode: both;
+}
+.select-btn i {
+  transition: 0.3s;
+  background-image: url("assets/img/Main-00000.jpg");
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 1000% 500%;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-animation 16s ease-in-out infinite;
+}
+.select-menu.active .select-btn i {
+  transform: rotate(-179deg);
+}
+.select-menu.active .options {
+  opacity: 0;
+  z-index: 100;
+  pointer-events: all;
+  cursor: pointer;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+  animation-duration: 0.4s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 0.4s;
+  -webkit-animation-fill-mode: both;
+}
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 30px, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+@keyframes fadeInDown {
+  from {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+  to {
+    transform: translate3d(0, 20px, 0);
+    opacity: 0;
+  }
+}
+.glass {
+  background: rgba(255, 255, 255, 0.59);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.6px);
+  -webkit-backdrop-filter: blur(8.6px);
+  border: 1px solid rgba(255, 255, 255, 0.36);
 }

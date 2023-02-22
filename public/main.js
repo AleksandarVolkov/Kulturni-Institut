@@ -64,6 +64,25 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll(".animation");
 hiddenElements.forEach((el) => observer.observe(el));
 
+const observerFocus = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        console.log("scale removed");
+        entry.target.classList.remove("scale-[98%]");
+      } else {
+        console.log("scale added");
+        entry.target.classList.add("scale-[98%]");
+      }
+    });
+  },
+  { threshold: [0.4, 0.6] }
+);
+
+const focusedElements = document.querySelectorAll(".focused");
+
+focusedElements.forEach((el) => observerFocus.observe(el));
+
 let buttons = document.querySelectorAll(".button");
 buttons.forEach(function (button) {
   button.addEventListener("mouseover", function (x) {
